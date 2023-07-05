@@ -24,3 +24,9 @@ variable "route_tables_name" {
     default = ["rt1", "rt2"]
   
 }
+variable "pub_rt_names" {
+    type = list()
+    default = ["pb_rt1", "pb_rt2"]
+  
+}
+
