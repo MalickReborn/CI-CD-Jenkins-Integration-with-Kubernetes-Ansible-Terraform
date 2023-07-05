@@ -30,3 +30,8 @@ variable "pub_rt_names" {
   
 }
 
+variable "cidr_blocks" {
+    type = list()
+    default = ["192.168.1.0/24", "192.168.64.0/24"]
+  
+}

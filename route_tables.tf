@@ -7,7 +7,6 @@ resource "aws_route_table" "rt_public" {
     cidr_block = "0.0.0.0/0"
     gateway_id = aws_internet_gateway.gw.id
   }
-
   tags = {
     Name = each.key
     Environment = "${var.my_env_tag}"
